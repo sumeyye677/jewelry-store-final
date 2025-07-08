@@ -172,32 +172,47 @@ class JewelryApp {
         }
     }
 
-    nextSlide() {
-        const maxIndex = Math.max(0, this.products.length - this.cardsPerView);
-        if (this.currentIndex < maxIndex) {
-            this.currentIndex++;
-            this.updateCarouselPosition();
-        }
+nextSlide() {
+    const totalProducts = this.products.length;
+    const maxIndex = Math.max(0, totalProducts - this.cardsPerView);
+    
+    if (this.currentIndex < maxIndex) {
+        this.currentIndex++;
+        this.updateCarouselPosition();
     }
+}
 
     updateCarouselPosition() {
         const carousel = document.getElementById('carousel');
-        const cardWidth = 300;
+        //const cardWidth = 300;
+
+        const card = document.querySelector('.product-card');
+        const cardWidth = card ? card.offsetWidth + 20 : 300;
+
+
+
+
+
         const translateX = -this.currentIndex * cardWidth;
         carousel.style.transform = `translateX(${translateX}px)`;
 
         this.updateCarouselButtons();
     }
 
-    updateCarouselButtons() {
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
+updateCarouselButtons() {
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
 
-        prevBtn.style.display = this.currentIndex > 0 ? 'block' : 'none';
-
-        const maxIndex = Math.max(0, this.products.length - this.cardsPerView);
+    // Previous button logic
+    prevBtn.style.display = this.currentIndex > 0 ? 'block' : 'none';
+    const maxIndex = Math.max(0, this.products.length - this.cardsPerView);
+    
+    if (this.products.length <= this.cardsPerView) {
+        nextBtn.style.display = 'none';
+    } else {
         nextBtn.style.display = this.currentIndex < maxIndex ? 'block' : 'none';
     }
+}
 
     handleTouchStart(event) {
         this.touchStartX = event.touches[0].clientX;
