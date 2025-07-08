@@ -4,6 +4,9 @@ Modern, responsive jewelry product listing application with dynamic pricing base
 
 Web Live Link: **https://jewelry-store-final-seven.vercel.app/**
 
+![img1](https://github.com/user-attachments/assets/fe77d2ce-9245-4640-aece-0c7e1ebf24f7)
+
+
 ## Features
 
 - **Real-time Gold Price Integration**: Dynamic pricing based on live gold market data
