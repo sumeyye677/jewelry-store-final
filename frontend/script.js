@@ -45,7 +45,10 @@ class JewelryApp {
 
         try {
             const queryParams = new URLSearchParams(filters);
-            const response = await fetch(`/api/products?${queryParams}`);
+           /* const response = await fetch(`/api/products?${queryParams}`); */
+           const response = await fetch('https://jewelry-store-final.onrender.com/api/products');
+
+
 
             if (!response.ok) {
                 throw new Error('Failed to fetch products');
