@@ -123,7 +123,7 @@ jewelry-app/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
-│   └── package.json (optional)
+│   └── package.json
 └── README.md
 ```
 
@@ -153,10 +153,10 @@ jewelry-app/
 - Accurate decimal representation
 
 ## Browser Support
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
+- Chrome 
+- Firefox
+- Safari 
+- Edge 
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
 ## Performance Optimizations
@@ -175,19 +175,6 @@ jewelry-app/
 - Product comparison
 - Real-time inventory updates
 
-## Deployment Options
-
-### Local Development
-Follow installation steps above
-
-### Production Deployment
-1. **Heroku**: Deploy backend to Heroku
-2. **Vercel**: Deploy frontend to Vercel
-3. **Netlify**: Deploy frontend to Netlify
-4. **AWS**: Deploy to EC2 or Elastic Beanstalk
-
-## Troubleshooting
-
 ### Common Issues
 1. **Gold Price API Error**: App falls back to cached/default price
 2. **CORS Issues**: Backend includes CORS middleware
@@ -199,6 +186,3 @@ Follow installation steps above
 - Check console for API errors
 - Test responsive design on multiple devices
 - Verify touch gestures on mobile devices
-
-## Support
-For issues or questions, please check the console logs and API responses for debugging information.
