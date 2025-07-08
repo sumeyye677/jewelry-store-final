@@ -155,7 +155,8 @@ h1 {
 
 .product-image {
     width: 100%;
-    height: 200px;
+    height: auto;
+    max-height: 250px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -412,12 +413,5 @@ html {
     justify-content: space-between;
     margin-bottom: 8px;
 }
-
-
-
-
-
-
-
 
 
