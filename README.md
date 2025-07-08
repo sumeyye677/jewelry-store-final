@@ -2,7 +2,7 @@
 
 Modern, responsive jewelry product listing application with dynamic pricing based on real-time gold prices.
 
-Web Live Link: **https://jewelrystoreproject.onrender.com/**
+Web Live Link: **https://jewelry-store-final-seven.vercel.app/**
 
 ## Features
 
