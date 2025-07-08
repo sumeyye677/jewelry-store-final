@@ -130,6 +130,8 @@ h1 {
 .carousel-wrapper {
     overflow: hidden;
     width: 100%;
+    position: relative;
+
 }
 
 .carousel {
@@ -413,5 +415,3 @@ html {
     justify-content: space-between;
     margin-bottom: 8px;
 }
-
-
